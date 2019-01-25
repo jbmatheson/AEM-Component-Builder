@@ -1,0 +1,36 @@
+{
+    "name": "aem-component-builder",
+    "displayName": "AEM Component Builder",
+    "description": "Creates the base component structure within the jcr_root/apps/<projectName>/Components/Content/ folder's hierarchy.",
+    "version": "0.0.1",
+    "publisher": "mansquatch",
+    "engines": {
+        "vscode": "^1.30.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onCommand:extension.buildAEMComponent"
+    ],
+    "main": "./extension",
+    "contributes": {
+        "commands": [
+            {
+                "command": "extension.buildAEMComponent",
+                "title": "Build AEM Component"
+            }
+        ]
+    },
+    "scripts": {
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "node ./node_modules/vscode/bin/test"
+    },
+    "devDependencies": {
+        "typescript": "^2.6.1",
+        "vscode": "^1.1.21",
+        "eslint": "^4.11.0",
+        "@types/node": "^8.10.25",
+        "@types/mocha": "^2.2.42"
+    }
+}
