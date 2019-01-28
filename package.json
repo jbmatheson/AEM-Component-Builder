@@ -4,6 +4,7 @@
     "description": "Creates the base component structure within the jcr_root/apps/<projectName>/Components/Content/ folder's hierarchy.",
     "version": "0.0.1",
     "publisher": "mansquatch",
+    "license": "GNU LICENSE",
     "engines": {
         "vscode": "^1.30.0"
     },
@@ -22,6 +23,10 @@
             }
         ]
     },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/jbmatheson/AEM-Component-Builder"
+    },
     "scripts": {
         "postinstall": "node ./node_modules/vscode/bin/install",
         "test": "node ./node_modules/vscode/bin/test"
@@ -32,5 +37,9 @@
         "eslint": "^4.11.0",
         "@types/node": "^8.10.25",
         "@types/mocha": "^2.2.42"
+    },
+    "dependencies": {
+        "chokidar": "^2.0.4",
+        "fs-extra": "^7.0.1"
     }
 }
