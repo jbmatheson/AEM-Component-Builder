@@ -1,13 +1,21 @@
 {
     "name": "aem-component-builder",
     "displayName": "AEM Component Builder",
-    "description": "Creates the base component structure within the jcr_root/apps/<projectName>/Components/Content/ folder's hierarchy.",
+    "description": "Creates the base component structure for AEM components (TouchUI and Sightly).",
     "version": "0.0.1",
     "publisher": "mansquatch",
     "license": "GNU LICENSE",
     "engines": {
         "vscode": "^1.30.0"
     },
+    "keywords": [
+        "AEM",
+        "Adobe Experience Manager",
+        "JCR",
+        "CRX",
+        "CMS"
+    ],
+    "icon": "images/icon.jpg",
     "categories": [
         "Other"
     ],
@@ -40,6 +48,7 @@
     },
     "dependencies": {
         "chokidar": "^2.0.4",
-        "fs-extra": "^7.0.1"
+        "fs-extra": "^7.0.1",
+        "replace-in-file": "^3.4.3"
     }
 }

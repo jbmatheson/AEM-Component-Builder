@@ -1,65 +1,22 @@
 # aem-component-builder README
 
-This is the README for your extension "aem-component-builder". After writing up a brief description, we recommend including the following sections.
-
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+This extensions creates the shell structure for a basic AEM component. It generates the component's node (and metadata) as well as a blank overlay (.html) and dialog files.
 
-For example if there is an image subfolder under your extension project workspace:
+## How-to-use
 
-\!\[feature X\]\(images/feature-x.png\)
+- Open the Command Palette (⇧⌘P)
+- Type: Build AEM Component
+    1. Enter the absolute path to where you want your component to be built (i.e.: jcr_root/apps/<projectName>/components/content/)
+    2. Enter the name you want you component to be called.
+    3. Enter the category you want your component to be grouped under.
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+** NOTES:
+    1. If your component name has spaces that is fine. Spaces will be replaced with a '-'.
+    2. The Spaces will not be replaced for the name or category in the .content.xml file.
+    3. Since this is drive from the Command Palette it is advised to copy the path for the component before using this command. That way you can just paste it in to the first entry field. Clicking out of that field to copy will close the Command Palette.
+    4. For now, the dialog and markup files are blank. This is because they can vary tremendously. In fact, they are optional in the event you just want to extend another component.
+    5. If you are extending another component then you will still have to add that resourceSuperType in the .content.xml file.
 
-## Requirements
-
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
-
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
------------------------------------------------------------------------------------------------------------
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+![AEM Component Builder](images/demo.gif)
